@@ -1,0 +1,122 @@
+/* Formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Form group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.form-label {
+    font-size: 1rem;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* Inputs */
+.form-input {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.55rem;
+    border: 1px solid #d1d5db;
+    background-color: #f9fafb;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus {
+    border-color: #6366f1; /* Azul más suave */
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+/* Password wrapper */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 0.9rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.15rem;
+    opacity: 0.6;
+    transition: 0.15s ease;
+}
+
+.password-toggle:hover {
+    opacity: 1;
+}
+
+/* Errores */
+.form-error {
+    min-height: 1rem;
+    font-size: 0.85rem;
+    color: #b91c1c;
+}
+
+/* Pie del formulario */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: #4b5563;
+}
+
+.form-link {
+    color: #4f46e5;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.form-link:hover {
+    color: #4338ca;
+}
+
+/* Mensaje general */
+.form-message {
+    min-height: 1.2rem;
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+}
+
+/* Botón principal */
+.btn {
+    padding: 0.85rem 1.4rem;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn--primary {
+    background-color: #4f46e5; /* Indigo elegante */
+    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.25);
+}
+
+.btn--primary:hover {
+    background-color: #4338ca;
+}
+
+.btn--primary:active {
+    transform: translateY(1px);
+}
