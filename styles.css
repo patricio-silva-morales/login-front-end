@@ -1,0 +1,184 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f3f4f6; /* Gris suave */
+    color: #111827;
+}
+
+/* Layout */
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+/* Tarjeta */
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2.5rem 2.5rem;
+    box-shadow: 0 10px 45px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.login-card__title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.login-card__subtitle {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+/* Formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Form group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.form-label {
+    font-size: 1rem;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* Inputs */
+.form-input {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.55rem;
+    border: 1px solid #d1d5db;
+    background-color: #f9fafb;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus {
+    border-color: #6366f1; /* Azul más suave */
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+/* Password wrapper */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 0.9rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.15rem;
+    opacity: 0.6;
+    transition: 0.15s ease;
+}
+
+.password-toggle:hover {
+    opacity: 1;
+}
+
+/* Errores */
+.form-error {
+    min-height: 1rem;
+    font-size: 0.85rem;
+    color: #b91c1c;
+}
+
+/* Pie del formulario */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: #4b5563;
+}
+
+.form-link {
+    color: #4f46e5;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.form-link:hover {
+    color: #4338ca;
+}
+
+/* Mensaje general */
+.form-message {
+    min-height: 1.2rem;
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+}
+
+/* Botón principal */
+.btn {
+    padding: 0.85rem 1.4rem;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn--primary {
+    background-color: #4f46e5; /* Indigo elegante */
+    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.25);
+}
+
+.btn--primary:hover {
+    background-color: #4338ca;
+}
+
+.btn--primary:active {
+    transform: translateY(1px);
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 2rem 1.6rem;
+    }
+
+    .login-card__title {
+        font-size: 1.6rem;
+    }
+}
